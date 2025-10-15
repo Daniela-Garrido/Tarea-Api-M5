@@ -22,6 +22,7 @@ fetch(API_URL)
                                     <h5 class="card-title">${holiday.title}</h5>
                                     <p class="card-text"><strong>Fecha:</strong> ${holiday.date}</p>
                                     <p class="card-text"><strong>Tipo:</strong> ${holiday.type}</p>
+                                    ${holiday.extra ? `<p class="card-text"><strong>Extra:</strong> ${holiday.extra}</p>` : ''}
                                 </div>
                             </div>
                         `;
